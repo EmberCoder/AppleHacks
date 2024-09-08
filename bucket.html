@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <title>Berry falls</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="collision.js"></script>
+    <link rel="stylesheet" href="bucket.css">
+  </head>
+  <body>
+    <p class="score"></p>
+    <div class="berries"></div>
+    <img src="bucket.png" id="bucket">
+    <div class="gameover">
+      <h1> Game over! </h1>
+      <p> Refresh (ctrl + R) the page to play again 🎮 </p>
+    </div>
+    <script>
+
+      
+      function dropBerry() {
+        var berryHTML= "<img class='berry' src='blueberry.png'>";
+        $('.berries').html(berryHTML);
+      
+      
+      var position = {
+        'left':`${Math.random()*600}px`
+      };
+      
+      $('.berry').css(position);
+      }
+      
+      setInterval(dropBerry, 3000);
+      
+     
+  
+             function checkKey(event) {  
+        var keyPressed = event.originalEvent.code;
+        if (keyPressed== "ArrowRight"){
+          var rightCSS = {
+               'left':'+=40px'
+         };
+         $("#bucket").css(rightCSS);
+        }
+        if (keyPressed == "ArrowLeft") {
+           var leftCSS = {
+             'left':'-=40px'
+           };
+           $("#bucket").css(leftCSS);
+        }
+        }
+        $(document).keydown(checkKey);
+      
+          var score = 0;
+      
+         function checkCollision(){
+     var collided = collision($('.berry'), $('#bucket'));
+           if(collided){
+          $(collided).hide();
+          $('.score').html(score += 1);
+           }
+            }
+      
+      function timeOver(){
+     $('.berries').hide();
+     $('.gameover').show();
+}
+setTimeout(timeOver, 20000);
+          setInterval(checkCollision, 50)
+      
+      
+
+
+    </script>
+  </body>
+</html>

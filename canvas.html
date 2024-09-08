@@ -1,0 +1,72 @@
+<html lang="en">
+    <head>
+        <title>Paint app</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link rel="stylesheet" href="canvas.css">
+    </head>
+    <body>
+      <h1> <i> Canvas </i>  </h1>
+        <div class="color-picker">
+          <div class="color" style='background-color: white;'> </div>
+          <div class="color" style='background-color: black;'> </div>
+          <div class="color" style='background-color: #FFA3A3;'> </div>
+          <div class="color" style='background-color: #FFD5A3;'> </div>          
+          <div class="color" style='background-color: #FFFEA3;'> </div>     
+          <div class="color" style='background-color: rgb(212, 255, 163);'> </div>
+          <div class="color" style='background-color: rgb(182, 252, 236);'> </div>
+          <div class="color" style='background-color: rgb(180, 223, 250);'> </div>
+          <div class="color" style='background-color: rgb(209, 200, 250);'> </div>
+          <div class="color" style='background-color: #ebc6f7;'> </div>     
+          <div class="color" style='background-color: #fccce8;'> </div>  
+          <div class="color" style='background-color: #ffcfd0;'> </div>  
+          
+        </div>
+        <div class="canvas">
+            <p style="background-image: url('bg(1).jpg');">
+        </div>
+  <script>
+          for(let count= 0; count < 1288; count++){
+              var boxHTML= '<div class= box> </div>';
+              $('.canvas').append(boxHTML);
+        }
+
+          var selectedColor= 'black';
+    
+            function paint(){
+               var newColor = {
+               'background-color': selectedColor,
+               'border-color': selectedColor
+          };
+      
+      $(this).css(newColor);
+          
+         }
+    
+        $('.box').mouseover(paint);
+    
+      function pickColor(){
+          selectedColor= $(this).css('background-color')
+        
+      }
+    
+          $('.color').click(pickColor);
+    
+    function clearCanvas(){
+      var clear = {
+          'background-color': 'white',
+          'border-color': 'lightgray'
+      };
+      
+    $('.box').css(clear);
+    
+      
+    }
+
+          
+          
+        </script>
+      
+                 <button onclick=clearCanvas()> Clear Canvas </button>   
+    </body>
+</html>

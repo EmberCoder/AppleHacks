@@ -1,0 +1,70 @@
+body{
+    background-image: url('bg%20(1).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 72px;
+    text-align: center;
+    color: #3f88b8;
+    text-shadow: 2px 2px 1px white;
+}
+
+.color-picker{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.color{
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10;
+}
+
+.canvas{
+    width: 799;
+    margin: auto;
+    border: none;
+}
+
+.box{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+button{
+  display:block;
+  width:250px;
+  height:55px;
+  line-height:55px;
+  margin:auto;
+  margin-top:20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:32px;
+  background-color:white;
+  cursor:pointer;
+  border:1px solid black;
+  outline:none;
+  transition:0.5s all ease;
+}
+
+button:hover{
+  background-color:firebrick;
+  border:2px solid black;
+  font-size:30px;
+  color:white;
+}
