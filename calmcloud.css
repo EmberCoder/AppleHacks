@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.nav-bar-ul a {
+  display: block;
+  background-color: #3f88b8;
+  text-align: center;
+  padding: 14px; 16px;
+  text-decoration: none;
+    color: #92cbf1;
+    border-radius: 15px;
+}
+
+.nav-bar-li a:hover {
+  background-color: #c5dcad;
+    color: #3f88b8;
+}
+
+.nav-bar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 32px;
+}
+
+.nav-bar-li {
+  float: right;
+}
+
+#resources {
+    margin-left: 10px;
+}
+
+#breathe {
+    margin-left: 10px;
+}
+
+#arcade {
+    margin-left: 10px;
+}
+
+#welcome {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 75px;
+    text-align: center;
+    color: #3f88b8;
+    margin-top: 100px;
+    line-height: 0.0000000000000000000000000000000000000000001;
+}
+
+#main-title {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 200px;
+    text-align: center;
+    color: #3f88b8;
+    line-height: 0.0000000000000000000000000000000000000000001;
+}
+
+#chooseButton {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    background-color: #92cbf1;
+    color: #3f88b8;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 50px;
+    font-family: 'Nanum Pen Script', cursive;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    border: none;
+}
+
+body{
+    background-image: url('backgroundimg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+p {
+    font-family: 'Nanum Pen Script', cursive;
+    color: #3f88b8;
+    font-size: 40px;
+    position: absolute;
+    top: 70%;
+    margin-right:auto;
+    text-align: center;
+    clear: left;
+}
+
+#affirmation{
+    margin: 0 auto;
+    display: block;
+    background-color: #3f88b8;
+    color: #92cbf1;
+    border-radius: 15px;
+    height: 50px;
+    width: auto;
+    top: 50%;
+    border: none;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 24px;
+}
+
+#affirmation:hover {
+    background-color: #c5dcad;
+    color: #3f88b8;
+}
+
+title1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #f5f2b8;
+    font-size: 100px;
+    left: 50%;
+    top:0%;
+    display: inline-block;
+    margin:20px;
+    text-shadow: 5px 5px #3F88B8;
+}
+
+#dino {
+    height:40px;
+    width: auto;
+}
+
+#resources-heading {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #3f88b8;
+    text-align: center;
+}
+
+.links {
+    left: 50%;
+}
